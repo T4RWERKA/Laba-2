@@ -41,9 +41,9 @@ begin
       Number := i * i - 1;
       AmountOfNumbers := AmountOfNumbers - 1;
       Write(i * i - 1, ' = ');
-//      j := 2;
-//      while (j < 1000) and (Number > 1) do
-      for j := 2 to Trunc(Sqrt(Number)) + 2 do
+      j := 2;
+      while (j < 1000) and (Number > 1) do
+//      for j := 2 to Trunc(Sqrt(Number)) + 2 do
       begin
         if Number mod j = 0 then
         begin
@@ -59,7 +59,7 @@ begin
           if Number > 1 then
             Write(' * ');
         end;
-//        j := j + 1;
+        j := j + 1;
       end;
       Writeln;
     end;
